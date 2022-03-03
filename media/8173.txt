@@ -1,0 +1,27 @@
+<script>
+         function checkPassword(form) {
+            debugger;
+            pass1 = form.password.value;
+            pass2 = form.cnf_password.value;
+
+            if(pass1 == '')
+               alert("please type password");
+            else if(pass2 == '')
+               alert("Please confirm password");
+            else if(pass1 != pass2){
+               alert("Passwords do not match")
+               return false;
+            }
+            else{
+               alert("Please login with your Username & Password")
+              // return false;
+            }
+         }
+      </script>
+
+      </head>
+      <body>
+         <div class="mid-class">
+            <div class="art-right-w3ls">
+               <h2>Registration</h2>
+               <form action="#" method="post" onSubmit = "return checkPassword(this)">
